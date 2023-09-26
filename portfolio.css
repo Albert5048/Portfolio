@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Poppins&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Indie+Flower&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+* {
+  margin: 0;
+  
+}
+.home,#about,#project,#contact,#resume{
+  background-image:url(pexels-rodolfo-quirós-2330137.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+nav {
+  top: 10px;
+  position: absolute;
+  right: 50px;
+  position: fixed;
+  z-index: 200;
+}
+nav a {
+  color: hsl(24, 45%, 98%);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 15px;
+}
+section {
+  height: 100vh;
+  width: 100%;
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-text h2 {
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  font-size: 60px;
+}
+.section-text h1 {
+  color: #d15407;
+  font-size: 90px;
+  font-family: "Orbitron", sans-serif;
+}
+.section-text p {
+  color: hsl(0, 4%, 95%);
+  font-size: 40px;
+  font-family: "Orbitron", sans-serif;
+}
+.section-text a {
+  margin-left: 40px;
+}
+.nav-bar a:hover{
+  text-decoration: underline;
+  color:orange;
+}
+.about {
+  height: 100vh;
+  width: 100%;
+  background-image: inherit;
+  /* background-color: hwb(174 5% 4%); */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.about img {
+  height: fit-content;
+  width: 330px;
+  /* margin-top: 20px; */
+}
+.about img:hover {
+  transition: all  ease-in;
+  transform: scale(1.05);
+}
+.about p {
+  margin-top: 40px;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  color:white;
+  width: 1000px;
+  text-align: center;
+  font-weight: 900;
+}
+.about .svg1 {
+  color: #d35100;
+  margin-top: 30px;
+  margin-left: 1400px;
+  rotate: 180deg;
+}
+.about .svg2 {
+  color: #d35100;
+  margin-top: -150px;
+  margin-left: 1400px;
+}
+.section-text svg {
+  color: #d35100;
+  position: relative;
+  left: 270px;
+  top: 160px;
+  animation: pop 1s ease-in-out infinite alternate;
+}
+@keyframes pop {
+  from {
+    transform: translatey(0);
+  }
+  to {
+    transform: translatey(20px);
+  }
+}
+.project {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.project .svg1 {
+  color: #fff;
+  /* margin-top: 70px; */
+  margin-left: 680px;
+  rotate: 180deg;
+  position: absolute;
+  z-index: 2;
+  margin-top: 50px;
+}
+.project .svg2{
+  color: #fff;
+  margin-left: 680px;
+  margin-top: -90px;
+  position: absolute;
+  z-index: 2;
+}
+
+.project-details {
+  background-color: rgb(2, 102, 45);
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px white;
+  width: 80%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+}
+.project-details:hover {
+  transition: all  ease-in;
+  transform: scale(1.05);
+}
+
+.project-details img {
+  width: 40%;
+  height: 260px;
+  /* margin: 20px; */
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.project-details img:hover {
+  transition: all  ease-in;
+  transform: scale(1.05);
+}
+.project-details h2 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Black Ops One", cursive;
+  margin-left: 50px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.project-details p {
+  color: #000;
+  font-size: 17px;
+  font-weight:bold;
+  font-family: "popins", cursive;
+  text-align: justify;
+  margin-left: 50px;
+  width: 600px;
+  margin-top: 10px;
+}
+.details button {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  border-color: #fff;
+  margin-left: 150px;
+  margin-top: 10px;
+  align-items: center;
+  font-family: "Black Ops One", cursive;
+}
+.details button:hover {
+  color: #d35100;
+  background-color: #fff;
+  border-color: #fff;
+}
+.project .svg1,#svg2{
+  color: #d35100;
+}
+.contact{
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact svg{
+  color: #d35100;
+}
+.contact .svg1 {
+  color:orange;
+  /* margin-top: 70px; */
+  margin-left: 1340px;
+  rotate: 180deg;
+  position: absolute; 
+  z-index: 1;
+  margin-top: -290px;
+}
+.contact .svg2{
+  color: orange;
+  margin-left: 35px;
+  margin-top: 250px;
+  position: absolute;
+  z-index: 2; 
+}
+.resume{
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.resume h2{
+  margin-top: 30px;
+  color: #fff;
+  font-family: 'Cairo', sans-serif;
+}
+.resume .svg1{
+  margin-top: 300px;
+  color: #fff;
+  animation: dow 2s ease-in-out infinite alternate ;
+}
+@keyframes dow {
+  from {
+    transform: translatey(0);
+  }
+  to {
+    transform: translatey(20px);
+  }  
+}
+.resume .svg1:hover{
+  color: #d35100;
+}
+ 
